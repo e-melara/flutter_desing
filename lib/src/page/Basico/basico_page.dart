@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'widgets/accion_item.dart';
+
 class BasicoPage extends StatelessWidget {
   final styleTitle = TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold);
   final styleSubTitle = TextStyle(fontSize: 16.0, color: Colors.grey);
@@ -29,6 +31,15 @@ class BasicoPage extends StatelessWidget {
       ),
     );
 
+    final acciones = Row(
+      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+      children: <Widget>[
+        AccionItem(title: 'CALL', iconData: Icons.call),
+        AccionItem(title: 'ROUTE', iconData: Icons.near_me),
+        AccionItem(title: 'SHARE', iconData: Icons.share),
+      ],
+    );
+
     return Scaffold(
       body: Column(
         children: <Widget>[
@@ -39,6 +50,8 @@ class BasicoPage extends StatelessWidget {
             ),
           ),
           textWidget,
+          SizedBox(height: 10.0),
+          acciones,
         ],
       ),
     );
