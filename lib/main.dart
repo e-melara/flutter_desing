@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'src/page/basico_page.dart';
+import 'src/page/Basico/basico_page.dart';
 
 void main() => runApp(MyApp());
 
