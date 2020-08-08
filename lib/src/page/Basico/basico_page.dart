@@ -1,6 +1,5 @@
-import 'package:flutter/material.dart';
-
 import 'widgets/accion_item.dart';
+import 'package:flutter/material.dart';
 
 class BasicoPage extends StatelessWidget {
   final styleTitle = TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold);
