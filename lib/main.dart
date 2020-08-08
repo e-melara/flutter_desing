@@ -3,6 +3,7 @@ import 'package:flutter/services.dart';
 
 import 'src/page/Basico/basico_page.dart';
 import 'src/page/Scroll/scroll_page.dart';
+import 'src/page/GradientDesign/gradient_design.dart';
 
 void main() => runApp(MyApp());
 
@@ -15,11 +16,12 @@ class MyApp extends StatelessWidget {
 
     return MaterialApp(
       title: 'Diseño',
-      initialRoute: 'scroll',
+      initialRoute: 'botones',
       debugShowCheckedModeBanner: false,
       routes: {
         'basico': (BuildContext context) => BasicoPage(),
         'scroll': (BuildContext context) => ScrollPage(),
+        'botones': (BuildContext context) => GradientDesign(),
       },
     );
   }

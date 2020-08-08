@@ -1,0 +1,41 @@
+import 'package:flutter/material.dart';
+
+import 'components/gradient_background.dart';
+
+class GradientDesign extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    final text = SafeArea(
+      child: Container(
+        padding: EdgeInsets.all(20.0),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: <Widget>[
+            Text(
+              'Classify transaction',
+              style: TextStyle(
+                color: Colors.white,
+                fontSize: 26.0,
+                fontWeight: FontWeight.w800,
+              ),
+            ),
+            SizedBox(height: 5.0),
+            Text(
+              'Class this transaction into paticular category',
+              style: TextStyle(color: Colors.white, fontSize: 16.0),
+            ),
+          ],
+        ),
+      ),
+    );
+
+    return Scaffold(
+      body: Stack(
+        children: <Widget>[
+          GradientBackground(),
+          text,
+        ],
+      ),
+    );
+  }
+}
