@@ -1,3 +1,4 @@
+import 'package:design_flutter/src/page/GradientDesign/components/table_category.dart';
 import 'package:flutter/material.dart';
 
 import 'components/gradient_background.dart';
@@ -34,7 +35,16 @@ class GradientDesign extends StatelessWidget {
       body: Stack(
         children: <Widget>[
           GradientBackground(),
-          text,
+          SingleChildScrollView(
+            physics: ScrollPhysics(),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: <Widget>[
+                text,
+                TableCategory(),
+              ],
+            ),
+          )
         ],
       ),
       bottomNavigationBar: BarNavigationBottom(),
