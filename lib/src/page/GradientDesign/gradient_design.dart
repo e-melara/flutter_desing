@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'components/gradient_background.dart';
+import 'package:design_flutter/src/widgets/bar_navigation_bottom.dart';
 
 class GradientDesign extends StatelessWidget {
   @override
@@ -36,6 +37,7 @@ class GradientDesign extends StatelessWidget {
           text,
         ],
       ),
+      bottomNavigationBar: BarNavigationBottom(),
     );
   }
 }
